@@ -1,0 +1,17 @@
+This is a sample WinRT app written in Delphi. 
+
+Winapi.Winrt and Winapi.Winrt_1 represent incomplete translations of headers
+from the Windows 8 Developer Preview SDK. 
+
+System.WinrtHelpers represents incomplete helper classes that attempt to make
+working with native WinRT types simpler.
+
+Use at your own risk.
+
+NOTE: the dproj has a post build event configured that executes deploy.bat
+deploy.bat assumes you have a certificate installed that is capable of signing
+code. It also needs to be modified to check for your signature's publisher
+(presumably, you on a development machine). Also, the AppxManifest needs to
+be updated with the correct publisher information as well. Deployment is 
+unnecessary to run in windowed mode: deployment can be ommitted by removing
+the post-build event in the project options.
